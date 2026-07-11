@@ -1,0 +1,28 @@
+{
+  "name": "playwright-framework-mcp-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Robust Playwright test automation framework scaffolded from the provided requirements.",
+  "scripts": {
+    "test": "playwright test",
+    "test:chromium": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:login": "playwright test tests/login-page.spec.ts --project=chromium",
+    "test:dashboard": "playwright test tests/dashboard-page.spec.ts --project=chromium",
+    "test:pim": "playwright test tests/pim-page.spec.ts --project=chromium",
+    "test:add-employee": "playwright test tests/add-employee-page.spec.ts --project=chromium",
+    "test:profile": "playwright test tests/profile-page.spec.ts --project=chromium",
+    "test:admin": "playwright test tests/admin-page.spec.ts --project=chromium",
+    "test:leave": "playwright test tests/leave-page.spec.ts --project=chromium",
+    "test:recruitment": "playwright test tests/recruitment-page.spec.ts --project=chromium",
+    "test:directory": "playwright test tests/directory-page.spec.ts --project=chromium",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.54.1",
+    "@types/node": "^22.10.2",
+    "typescript": "^5.8.3"
+  }
+}

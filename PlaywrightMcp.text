@@ -1,0 +1,201 @@
+# Create a Robust Playwright Test Automation Framework
+
+## Setup Requirements
+
+Please set up a complete test environment with:
+
+1. Node.js and npm for running JavaScript/TypeScript.
+2. Playwright for browser automation.
+   - Install Playwright.
+   - Install browser engines (Chromium, Firefox, WebKit).
+   - Set up the Playwright Test Runner.
+3. TypeScript for better code reliability.
+4. VS Code extensions for:
+   - Playwright Test Explorer
+   - Test Running and Debugging
+   - Code Intelligence
+5. Reporting tools for:
+   - HTML test reports
+   - Screenshot and video capture
+   - Test execution logs
+
+---
+
+## Framework Overview
+
+Please build an end-to-end test automation framework that should:
+
+1. Handle test failures gracefully with screenshots and logs.
+2. Use smart element-finding strategies that don't break easily.
+3. Support running tests in different browsers.
+4. Make it easy to maintain and update tests.
+5. Include good error messages when things go wrong.
+
+---
+
+## Test Writing Format
+
+When writing tests, I will provide:
+
+1. The website URL I want to test.
+2. The steps to perform in plain English.
+3. Any login details needed.
+4. What I want to check on each page.
+5. Which browsers to test in.
+
+---
+
+## Framework Features I Need
+
+Please include:
+
+1. Smart ways to find elements even if the page changes.
+2. Clear logging so I can see what the test is doing.
+3. Screenshots if something goes wrong.
+4. Easy ways to manage test data.
+5. Support for running tests in parallel.
+
+---
+
+## Example Test Request
+
+Create a test that:
+
+1. Goes to the OrangeHRM demo website.
+2. Logs in as an admin user.
+3. Goes to the Employee list.
+4. Adds a new employee with random data.
+5. Verifies the employee was added correctly.
+6. Logs out.
+
+Make sure the test:
+
+- Handles slow loading pages.
+- Takes screenshots if it fails.
+- Works in Chrome and Firefox.
+- Has clear error messages.
+- Logs each step it performs.
+
+---
+
+## What to Include in Test Steps
+
+For each test step, please specify:
+
+1. Which page the test should be on.
+2. What should appear on the page.
+3. What action to perform (click, type, select, etc.).
+4. How long to wait, if needed.
+5. What could go wrong.
+
+---
+
+## Example Format for Writing Test Steps
+
+### 1. Starting Point
+- What website we're on.
+- Whether we are logged in or not.
+
+### 2. Each Action Step
+- What to click or type.
+- What should happen next.
+- How long to wait if needed.
+
+### 3. Checking Things
+- What should be visible on the page.
+- Any specific text or elements.
+- Any error messages to watch for.
+
+### 4. Finishing Up
+- How to clean up (logout, etc.).
+- What final state to verify.
+
+---
+
+## How to Describe Page Elements
+
+When describing elements on a page, provide:
+
+### By Visible Text
+- The exact text shown on the button or link.
+- Nearby text that helps identify it.
+- The label or placeholder text.
+
+### By Purpose
+- What the element does (submit form, search, etc.).
+- What kind of element it is (button, textbox, dropdown).
+
+### By Position
+- Where it appears on the page.
+- Any nearby elements.
+
+---
+
+## Messages and Popups
+
+When a page displays:
+
+- Success messages
+- Warning messages
+- Error messages
+- Confirmation dialogs
+- Alert popups
+
+Verify the correct message appears and disappears if expected.
+
+---
+
+## What Good Test Results Look Like
+
+Your tests should:
+
+1. Run successfully most of the time.
+2. Clearly explain why they fail.
+3. Work consistently across browsers.
+4. Be easy to maintain when the application changes.
+5. Handle slow internet connections.
+6. Capture screenshots when errors occur.
+7. Produce clear pass/fail reports.
+
+---
+
+## How to Write Your Test Request
+
+When requesting a new test, include:
+
+1. The website to test.
+2. The objective of the test.
+3. Any special conditions to validate.
+4. The expected outcome.
+5. Any known issues or edge cases to consider.
+
+This helps create reliable, maintainable, and production-ready Playwright tests.
+
+---
+
+## Project Configuration
+
+The framework should include:
+
+### Package Dependencies
+- Playwright
+- @playwright/test
+- TypeScript
+- Any additional required packages
+- Specific package versions (if needed)
+
+### Configuration Files
+- playwright.config.ts
+- tsconfig.json
+- package.json
+- Any required environment variable files
+
+### Folder Structure
+- tests/
+- pages/
+- utils/
+- fixtures/
+- test-data/
+- reports/
+- screenshots/
+- videos/
